@@ -52,7 +52,7 @@ class VideoPlayer(QMainWindow):
         
         self.player = QMediaPlayer()
         self.player.setVideoOutput(self.video)
-        self.player.setMedia(QMediaContent(QUrl.fromLocalFile("./test.mp4")))
+        self.player.setMedia(QMediaContent(QUrl.fromLocalFile("./media/Test_Media.mp4")))
         
         self.slider.sliderMoved.connect(self.player.setPosition)
         self.player.seekableChanged = True
